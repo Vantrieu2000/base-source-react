@@ -1,0 +1,115 @@
+#category-setting {
+  height: 100%;
+
+
+  .category-setting__container {
+    height: auto;
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px 48px;
+    box-shadow: $code-box-shadow;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include smartphone {
+      padding: 24px;
+    }
+
+    &__title {
+      font-size: 22px;
+      font-weight: 600;
+      color: $black;
+    }
+
+    &__content {
+
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 12px;
+        box-shadow: $code-box-shadow;
+
+        .category-setting__item {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          justify-content: space-between;
+          padding: 12px 24px;
+          height: 50px;
+          width: 100%;
+          border-radius: 8px;
+          border: 1px solid $border-table-color;
+          box-shadow: $code-box-shadow;
+
+          &__name {
+            width: 100%;
+            text-align: left;
+            font-size: 14px;
+            font-weight: 600;
+          }
+
+          &__delete {
+            cursor: pointer;
+          }
+
+          &.active {
+            background: $primary;
+            color: #fff;
+            border-color: #fff;
+            transform: translateX(10px);
+            transition: all 0.3s ease;
+          }
+        }
+      }
+
+      &__detail {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+
+        .category-setting__detail {
+          box-shadow: $code-box-shadow;
+          padding: 12px 24px;
+          height: 100%;
+
+          &__title {
+            font-size: 20px;
+            font-weight: 600;
+          }
+
+          &__form {}
+
+          &__action {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            width: 100%;
+          }
+
+          &.no-category {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            font-size: 22px;
+          }
+        }
+
+
+        &__action {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+        }
+      }
+    }
+  }
+
+}

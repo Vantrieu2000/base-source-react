@@ -1,0 +1,113 @@
+#profile-page {
+  height: 100%;
+
+  .profile-container {
+    display: flex;
+
+    .underline {
+      background: #c5c4c4;
+      height: 1px;
+    }
+
+    .change-img-button {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 24px;
+    }
+
+    .form-img {
+      width: 264px;
+      height: 264px;
+      object-fit: cover;
+    }
+
+    .ant-form-item {
+      .button-upload {
+        color: $primary-text;
+        border-color: $primary-text;
+        width: 146px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .ant-upload-picture-card-wrapper {
+        width: 264px;
+      }
+
+      .ant-upload.ant-upload-select-picture-card {
+        width: 100%;
+        height: auto;
+        padding-top: 100%;
+        position: relative;
+        border-radius: 8px;
+        border: none;
+      }
+
+      .ant-upload.ant-upload-select-picture-card .ant-upload {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      .avatar {
+        width: 100%;
+        border-radius: 8px;
+      }
+    }
+
+    .ant-row.ant-form-item {
+      .ant-form-item-label {
+        text-align: left;
+      }
+    }
+
+    .form-title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 22px;
+      color: #1a1a1a;
+    }
+
+    .row-item {
+      display: flex;
+      align-items: center;
+    }
+
+    .form_input {
+      height: 44px;
+      width: 100%;
+      max-width: 340px;
+      border-radius: 4px;
+    }
+
+    .ant-select-selector {
+      border-radius: 4px;
+      height: 44px;
+      width: 100%;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+
+    .form_button {
+      width: 160px;
+      height: 40px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+    }
+
+    .right-form {
+      width: 100%;
+      margin-left: 110px;
+      max-width: 480px;
+    }
+  }
+}

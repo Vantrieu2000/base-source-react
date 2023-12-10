@@ -1,0 +1,37 @@
+#create-qr {
+  height: 100%;
+
+
+  .create-qr__container {
+    height: auto;
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px 48px;
+    box-shadow: $code-box-shadow;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include smartphone {
+      padding: 24px;
+    }
+
+    &__title {
+      font-size: 22px;
+      font-weight: 600;
+      color: $black;
+    }
+
+    &__content {
+
+
+      &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+    }
+  }
+
+}

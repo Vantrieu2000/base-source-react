@@ -1,0 +1,53 @@
+.ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional):before {
+  display: none;
+}
+
+.ant-form-item-label>label.ant-form-item-required:before {
+  display: none !important;
+}
+
+.ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional):after {
+  display: inline-block;
+  margin-right: 4px;
+  color: #ff4d4f;
+  font-size: 16px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+
+.ant-form-item-label>label:after {
+  display: none;
+}
+
+.ant-input-number-handler-wrap {
+  display: none;
+}
+
+.ant-form-item-control-input-content {
+  .ant-input-number {
+    width: 100%;
+
+    input {
+      text-align: left;
+    }
+  }
+}
+
+.ant-form-item-label {
+  label {
+    font-size: 16px !important;
+  }
+}
+
+.ant-form-horizontal.ant-form {
+  .ant-form-item {
+    .ant-row.ant-form-item-row {
+      gap: 12px !important;
+
+      .ant-form-item-label {
+        text-align: left;
+      }
+    }
+  }
+}

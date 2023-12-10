@@ -1,0 +1,54 @@
+#store-preference {
+  height: 100%;
+
+
+  .store-preference__container {
+    height: auto;
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px 48px;
+    box-shadow: $code-box-shadow;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include smartphone {
+      padding: 24px;
+    }
+
+    &__title {
+      font-size: 22px;
+      font-weight: 600;
+      color: $black;
+    }
+
+    &__content {
+
+      display: flex;
+      justify-content: center;
+
+      form {
+        width: 80%;
+      }
+
+      .ant-upload.ant-upload-select {
+        width: 100%;
+        aspect-ratio: 1000/200;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,35 @@
+.menu-dropdown {
+  &:hover {
+    .menu-sub-dropdown {
+      display: block;
+    }
+  }
+}
+
+.setting-menu {
+  z-index: 105;
+  position: fixed;
+  inset: 0px 0px auto auto;
+  margin: 0px;
+  transform: translate(-30px, 55px);
+}
+
+// Tablet modes
+@include media-breakpoint-down(lg) {
+
+  // Containers
+  .setting-menu {
+    inset: 0px auto auto 0;
+    transform: translate(75vw, 55px);
+  }
+}
+
+//Mobile mode
+@include media-breakpoint-down(md) {
+
+  // Containers
+  .setting-menu {
+    inset: 0px auto auto 0;
+    transform: translate(55vw, 55px);
+  }
+}
