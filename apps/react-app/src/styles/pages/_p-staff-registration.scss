@@ -1,0 +1,48 @@
+#staff-registration {
+  height: 100%;
+
+
+  .staff-registration__container {
+    height: auto;
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px 48px;
+    box-shadow: $code-box-shadow;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include smartphone {
+      padding: 24px;
+    }
+
+    &__title {
+      font-size: 22px;
+      font-weight: 600;
+      color: $black;
+    }
+
+    &__content {
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      &__form {
+
+        &__add {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
+
+        &__table {}
+
+      }
+    }
+  }
+
+}

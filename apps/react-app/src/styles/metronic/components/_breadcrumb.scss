@@ -1,0 +1,84 @@
+//
+// Breadcrumb
+//
+$text-color : #2262C6;
+// Breadcrumb
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+
+    // Item breadcrumb
+    .breadcrumb-item {
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+        padding-right: $breadcrumb-item-padding-x;
+
+        a {
+            color: $text-color;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 22px;
+
+        }
+
+        &:last-child {
+            padding-right: 0;
+        }
+
+        &:after {
+            content: "/";
+            padding-left: $breadcrumb-item-padding-x;
+            color: $text-color;
+        }
+
+        &:before {
+            display: none;
+        }
+
+        &:last-child {
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+// Breadcrumb line style
+.breadcrumb-line {
+    .breadcrumb-item {
+        &:after {
+            content: "-";
+        }
+    }
+}
+
+// Breadcrumb dot style
+.breadcrumb-dot {
+    .breadcrumb-item {
+        &:after {
+            content: "\2022";
+        }
+    }
+}
+
+// Breadcrumb separatorless style
+.breadcrumb-separatorless {
+    .breadcrumb-item {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+// Custom 
+.page-breadcrumb {
+    position: fixed;
+    height: 0px;
+    z-index: 100;
+    top: 18px;
+}

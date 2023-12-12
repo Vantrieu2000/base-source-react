@@ -1,0 +1,12 @@
+//
+// Custom input number
+//
+
+.ant-custom-inputnumber {
+  border-radius: 4px;
+  width: 100%;
+
+  .ant-input-number input {
+    text-align: left !important;
+  }
+}

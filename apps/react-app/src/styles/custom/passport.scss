@@ -1,0 +1,341 @@
+.passwort-container {
+  gap: 24px;
+  background: url('/assets/images/common/backgroundimage.png') no-repeat;
+  background-size: cover;
+  padding: 5% 0;
+
+  &__banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &__content {
+      height: 200px;
+      width: 70%;
+      background: #fff;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .anticon {
+    color: #8fbbff;
+  }
+
+  @include smartphone {
+    justify-content: center;
+  }
+
+}
+
+.passport {
+  &-title {
+    background-image: linear-gradient(to right, $primary, #9f231a);
+    padding: 20px;
+    padding-left: 15%;
+    color: #fff;
+    font-size: 24px;
+  }
+
+  &-logo {
+    padding: 15px;
+    padding-left: 40px;
+
+    >img {
+      height: 36px;
+      width: 170px;
+    }
+  }
+
+  &-container {
+    width: 540px;
+    min-height: 400px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include smartphone {
+      width: auto;
+    }
+  }
+
+  &-content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &_submit {
+      padding: 0 20px;
+    }
+
+    #login {
+      a {
+        text-align: end;
+        color: $primary-text;
+      }
+
+      .form-login-title {
+        font-weight: 700;
+        font-size: 20px;
+        padding-bottom: 5px;
+        width: fit-content;
+        color: $black-text-secondary;
+      }
+    }
+
+    .separator-login {
+      margin: 0 0 15px 0;
+    }
+
+    .btn-login {
+      height: 56px;
+      border-radius: 4px !important;
+
+      span {
+        font-weight: 500;
+        letter-spacing: -1px;
+      }
+    }
+
+    .body_passport-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 25px;
+
+      &-title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 22px;
+        color: $black-text-secondary;
+      }
+
+      .separator {
+        margin-top: 12px !important;
+        height: 3px !important;
+      }
+    }
+
+    .passport-content_direct {
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      gap: 24px;
+
+      button {
+        height: 110px;
+        border-radius: 12px !important;
+
+        span {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+.passport-content-sp {
+  .body_passport-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 22px;
+
+    }
+
+    .separator {
+      margin-top: 12px !important;
+      height: 3px !important;
+    }
+  }
+
+  .passport-content_direct {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    button {
+      height: 84px;
+
+      span {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.reset-password {
+
+  .reset-password-container {
+
+    .separator {
+      margin-bottom: 46px !important;
+    }
+
+    .reset-password-actions {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.separator {
+  width: 52px;
+  height: 3px;
+  background: #2262C6;
+  border-radius: 9px;
+  margin: 24px 0;
+}
+
+.forgotpass {
+  &-form {
+    margin-top: 25px;
+    // margin-bottom: 25px;
+    padding: 20px 0px;
+    border-radius: 5px;
+
+    >div {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .form-forgot-title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 8px;
+      color: $black-text-secondary;
+    }
+
+    .form-forgot-under-title {
+      color: #5b5b5b;
+    }
+  }
+
+  &-actions {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+
+    button {
+      height: 56px;
+      border-radius: 4px !important;
+
+      span {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+    }
+
+    a {
+      text-align: center;
+      color: $primary;
+      font-size: 16px;
+    }
+  }
+}
+
+.reset-success {
+  &-container {
+
+    button {
+      height: 56px;
+      border-radius: 12px !important;
+    }
+
+    .check-image {
+      display: flex;
+      justify-content: center;
+    }
+
+    .success-text {
+      margin: 24px 0 22px 0;
+
+      .form-forgot-title {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 22px;
+        text-align: center;
+        color: #121212;
+        margin-bottom: 8px;
+      }
+
+      .form-forgot-under-title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $black-text-secondary;
+      }
+    }
+  }
+}
+
+.verify-reset-password-container {
+  .verify-reset-password-form {
+    .form-forgot-title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 8px;
+      color: #121212;
+    }
+
+    .form-forgot-under-title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #121212;
+    }
+  }
+
+  .verify-mail-actions {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+
+    .disable {
+      pointer-events: none;
+      cursor: not-allowed !important;
+    }
+
+    .resend-mail {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 24px;
+      cursor: pointer;
+      text-align: center;
+      color: #2262C6;
+    }
+
+    button {
+      height: 56px;
+      border-radius: 4px !important;
+
+      span {
+        font-weight: 400;
+        letter-spacing: -2px;
+      }
+    }
+
+    a {
+      text-align: center;
+      color: $primary;
+      font-size: 16px;
+    }
+  }
+}

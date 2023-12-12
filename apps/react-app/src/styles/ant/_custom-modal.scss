@@ -1,0 +1,41 @@
+.modal {
+    &--select-category {
+        padding: 24px;
+    }
+
+    &--register-staff {
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    &--create-question {
+        textarea {
+            border-radius: 8px;
+        }
+    }
+}
+
+.ant-modal-content {
+    border-radius: 8px;
+
+    .ant-modal-close {
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .ant-modal-header {
+        border-radius: 8px 8px 0 0;
+
+        .ant-modal-title {
+            font-weight: 700;
+            font-size: 18px;
+        }
+    }
+}

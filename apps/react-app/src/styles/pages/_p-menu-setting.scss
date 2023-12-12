@@ -1,0 +1,179 @@
+#menu-setting {
+  height: 100%;
+
+
+  .menu-setting__container {
+    height: auto;
+    background: #fff;
+    border-radius: 24px;
+    padding: 24px 48px;
+    box-shadow: $code-box-shadow;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    @include smartphone {
+      padding: 24px;
+    }
+
+    &__title {
+      font-size: 22px;
+      font-weight: 600;
+      color: $black;
+    }
+
+    &__content {
+
+
+      &__list {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+        gap: 24px;
+        border-radius: 8px;
+        justify-content: space-between;
+        box-shadow: $code-box-shadow;
+
+        &__category {
+          display: flex;
+          flex-direction: column;
+          gap: 12px;
+
+          &__title {
+            font-size: 18px;
+            font-weight: 600;
+            color: $black;
+          }
+
+          &__select {
+            .ant-select {
+              width: 90%;
+
+            }
+          }
+        }
+
+        &__upload {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+
+          &__title {
+            font-size: 18px;
+            font-weight: 600;
+            color: $black;
+          }
+
+        }
+      }
+
+      &__detail {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-shadow: $code-box-shadow;
+        border-radius: 8px;
+        padding: 12px;
+        gap: 12px;
+
+        &__header {
+          display: flex;
+          justify-content: space-between;
+
+          @include smartphone {
+            gap: 24px;
+            flex-direction: column;
+          }
+
+          &__title {
+            font-size: 18px;
+            font-weight: 600;
+            color: $black;
+          }
+
+          &__action {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+
+            button {
+              flex: 1;
+              min-width: auto;
+              min-width: 80px;
+            }
+          }
+        }
+
+        &__search {}
+
+        &__content {
+          .menu-setting__item {
+            min-height: 100px;
+            border-radius: 8px;
+            font-size: 16px;
+            padding: 12px 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid $stroke;
+            box-shadow: $code-box-shadow;
+
+            @include smartphone {
+              padding: 8px;
+            }
+
+            &__head {
+              display: flex;
+              gap: 8px;
+
+              >div {
+                display: flex;
+                align-items: center;
+              }
+
+              &__image {
+                height: 80%;
+
+                img {
+                  width: 150px;
+                  height: 80px;
+                  object-fit: cover;
+
+                  @include smartphone {
+                    width: 75px;
+                  }
+                }
+              }
+            }
+
+            &__tail {
+              display: flex;
+              align-items: center;
+              gap: 14px;
+
+              &__edit {
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &__add-category {
+
+      &__content {
+
+
+        .ant-form-item-required {
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+
+  }
+
+}
