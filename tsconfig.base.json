@@ -7,14 +7,43 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "noImplicitAny": false,
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2020", "dom"],
+    "lib": [
+      "es2020",
+      "dom"
+    ],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@react-app/components": [
+        "libs/components/src/index.ts"
+      ],
+      "@react-app/intl": [
+        "libs/intl/src/index.ts"
+      ],
+      "@react-app/services": [
+        "libs/services/src/index.ts"
+      ],
+      "@react-app/store": [
+        "libs/store/src/index.ts"
+      ],
+      "@react-app/utils": [
+        "libs/utils/src/index.ts"
+      ],
+      "@react-app/images": [
+        "apps/app/src/assets/images"
+      ],
+      "@react-app/validate": [
+        "libs/validate/src/index.ts"
+      ]
+    }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
 }
